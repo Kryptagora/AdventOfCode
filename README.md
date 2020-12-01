@@ -1,3 +1,7 @@
+#AoC Framework
+
+Repository for the Advent of Code Challenge.
+-
 Initialize a day by running `python build.py [day] [optional: year, default=2020]`.
 
 A typical solution is a file containing the funcitons `part_1` and `part_2`, returning

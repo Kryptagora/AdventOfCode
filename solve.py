@@ -4,8 +4,12 @@ from aocd.models import Puzzle
 from fire import Fire
 
 def solve(day, year='2020', submit=True):
-    part_1 = import_module(f'{year}.{day}.solutions.part_1')
-    part_2 = import_module(f'{year}.{day}.solutions.part_2')    
+    part_1 = import_module(f'{year}.{day}.solutions')
+    part_2 = import_module(f'{year}.{day}.solutions')
+    part_1 = getattr(part_1, 'part_1')
+    part_2 = getattr(part_2, 'part_2')
+    #part_1 = import_module('.part_1', package=f'{year}.{day}.solutions')
+    #part_2 = import_module('.part_2', package=f'{year}.{day}.solutions')
     puzzle = Puzzle(int(year), int(day))
     answer_a = part_1(puzzle.input_data)
     answer_b = part_2(puzzle.input_data)
