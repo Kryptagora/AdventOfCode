@@ -80,7 +80,6 @@ def part_2(input_data: str):
                 column_element_dict[possibilities[0]] = entry
                 pbar.update(1)
 
-
     depart_number = 1
     for i, label in column_element_dict.items():
         if "departure" in label:
