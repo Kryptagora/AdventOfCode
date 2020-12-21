@@ -2,6 +2,9 @@ import numpy as np
 import re
 from tqdm import tqdm
 
+"""I cant seem to find the error, but i will not discard this approach entirely.
+It tries to fit the puzzzle pieces according to the edges, where every Tile is
+a Object."""
 
 class Tile:
     def __init__(self, id_number, content):
