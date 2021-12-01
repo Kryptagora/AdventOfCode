@@ -3,7 +3,7 @@ from shutil import copytree
 from os import popen
 from fire import Fire
 
-def build_day(day, year='2020'):
+def build_day(day, year='2021'):
     path = Path(str(year)) / ('day_' + str(int(day)).zfill(2))
     copytree('template', path)
 
