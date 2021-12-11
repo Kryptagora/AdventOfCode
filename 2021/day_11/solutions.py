@@ -18,6 +18,7 @@ def part_2(input_data: str):
 
     return increase_and_flash(input_data)
 
+
 def increase_and_flash(octos: np.array = None, stop=np.inf):
     # the frame for convolving over it
     frame = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
