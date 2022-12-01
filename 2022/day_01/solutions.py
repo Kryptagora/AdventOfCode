@@ -35,8 +35,7 @@ def part_2(input_data: str):
     # get three largest elements in the list
     totalCalories.sort(reverse=True)
     
-    print(totalCalories)
-
+    
     return sum(totalCalories[:3])
     
 
