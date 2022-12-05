@@ -8,7 +8,7 @@ def build_day(day, year='2022'):
     copytree('template', path)
 
     # Automatically opens directory in VSCode
-    # popen(f'code {str(path)}')
+    popen(f'code {str(path)}')
 
 if __name__ == "__main__":
     Fire(build_day)
